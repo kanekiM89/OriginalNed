@@ -41,7 +41,7 @@ route::get('admin/user/index',[UserController::class,'index'])->name('u.index');
 route::get('admin/category/index',[CategoryController::class,'index'])->name('c.index');
 route::get('admin/category/createfrom',[CategoryController::class,'createfrom'])->name('c.from');
 route::get('admin/category/edit',[CategoryController::class,'edit'])->name('c.edit');
-
+route::post('admin/category/insert',[CategoryController::class,'insert']);
 
 
 
